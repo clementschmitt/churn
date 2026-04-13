@@ -38,10 +38,13 @@ churn_analysis.ipynb   → Full analysis: EDA, preprocessing, feature engineerin
 
 ### Models
 
-| Model | Accuracy | Churn Recall | Churn F1 |
-|-------|----------|--------------|----------|
-| Random Forest | TBD | TBD | TBD |
-| XGBoost | TBD | TBD | TBD |
+| Model | Accuracy | Churn F1 | Churn Recall |
+|-------|----------|----------|--------------|
+| Logistic Regression (`class_weight=balanced`) | 72.14% | 0.60 | **0.78** |
+| Random Forest (`class_weight=balanced`) | **75.69%** | 0.51 | 0.48 |
+| XGBoost (`scale_pos_weight`) | 73.85% | 0.58 | 0.68 |
+
+> Best recall: Logistic Regression — detects 78% of churners. Best accuracy: Random Forest.
 
 ### Stack
 
@@ -87,10 +90,13 @@ churn_analysis.ipynb   → Analyse complète : EDA, preprocessing, feature engin
 
 ### Modèles
 
-| Modèle | Accuracy | Recall Churn | F1 Churn |
-|--------|----------|--------------|----------|
-| Random Forest | TBD | TBD | TBD |
-| XGBoost | TBD | TBD | TBD |
+| Modèle | Accuracy | F1 Churn | Recall Churn |
+|--------|----------|----------|--------------|
+| Logistic Regression (`class_weight=balanced`) | 72.14% | 0.60 | **0.78** |
+| Random Forest (`class_weight=balanced`) | **75.69%** | 0.51 | 0.48 |
+| XGBoost (`scale_pos_weight`) | 73.85% | 0.58 | 0.68 |
+
+> Meilleur recall : Logistic Regression — détecte 78% des churners. Meilleure accuracy : Random Forest.
 
 ### Stack
 
